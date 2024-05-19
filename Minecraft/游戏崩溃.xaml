@@ -1,0 +1,36 @@
+<local:MyCard Title="获取错误信息" CanSwap="True" Margin="0,0,0,15">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock Margin="0,0,0,5" LineHeight="17"
+                    Text="游戏崩溃时，在 &quot;Minecraft 出现错误&quot; 弹窗中会显示可能的原因。一般而言，根据提示进行操作即可解决。" />
+        <TextBlock Margin="0,0,0,5" LineHeight="17"
+                    Text="弹窗中的英文信息一般是重要的线索，可以对照下方的常见错误原因进行分析。" />
+        <TextBlock Margin="0,0,0,5" LineHeight="17"
+                    Text="若弹窗中没有出现任何错误原因，你可以点击 &quot;导出错误报告&quot; 按钮导出错误报告，并发送给他人求助。" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="Mod ID" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,11">
+        <TextBlock Margin="0,0,0,4" LineHeight="17"
+                    Text="原因：目前离线账户无法使用 1.16.4 和 1.16.5 的多人游戏功能。" />
+        <TextBlock Margin="0,0,0,4" LineHeight="17"
+                    Text="解决方法：请逐一尝试以下方法。" />
+        <TextBlock Margin="2,0,0,4" LineHeight="17"
+                    Text="1. 使用正版登录或第三方登录进入游戏。" />
+        <TextBlock Margin="2,0,0,4" LineHeight="17"
+                    Text="2. 尝试在启动游戏时断开网络连接。" />
+        <TextBlock Margin="2,0,0,4" LineHeight="17"
+                    Text="3. 安装下方的 “离线多人修正” 或 “Offline Multiplayer” 模组。" />
+        <local:MyListItem  Margin="0,0,0,4"
+		            Title="离线多人修正 | MultiOfflineFix" Info="Fabric / Forge 1.16.4 - 1.16.5"
+		            EventType="打开网页" EventData="https://www.mcmod.cn/download/10643.html" Type="Clickable" />
+        <local:MyListItem  Margin="0,0,0,4"
+		            Title="Offline Multiplayer" Info="Fabric 1.16.5"
+		            EventType="打开网页" EventData="https://github.com/ChickenPige0n/offline-multiplayer-fabric/releases" Type="Clickable" />
+        <TextBlock Margin="2,2,0,4" LineHeight="17"
+                    Text="4. 使用下方的 Authlib 更新工具。" />
+        <local:MyListItem  Margin="0,0,0,4"
+		            Title="Authlib 更新工具" Info="502mc 制作的 Authlib 更新工具，支持修复未安装 Mod 加载器的客户端。"
+		            EventType="打开网页" EventData="https://www.mcbbs.net/thread-1450892-1-1.html" Type="Clickable" />
+    </StackPanel>
+</local:MyCard>
